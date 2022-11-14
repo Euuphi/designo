@@ -1,9 +1,9 @@
 @layer utilities {
     .show {
-        @apply pointer-events-none visible opacity-100;
+        @apply pointer-events-auto visible opacity-100;
     }
 
     .hide {
-        @apply pointer-events-auto invisible opacity-0;
+        @apply pointer-events-none invisible opacity-0;
     }
 }
