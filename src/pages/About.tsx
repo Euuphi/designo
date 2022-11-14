@@ -1,9 +1,9 @@
 const About = () => {
-	return (
-		<div className="h-screen w-full bg-red-200 flex justify-center items-center">
-			About
-		</div>
-	);
+    return (
+        <div className="flex h-screen w-full items-center justify-center bg-red-200">
+            About
+        </div>
+    );
 };
 
 export default About;
