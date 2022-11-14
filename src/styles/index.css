@@ -3,6 +3,7 @@
 
 /* TODO: Remove for production */
 @import "components/screensizelabel.css";
+@import "animation.css";
 
 @tailwind base;
 @tailwind components;
