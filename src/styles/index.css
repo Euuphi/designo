@@ -16,6 +16,10 @@ body {
     line-height: 1.625rem;
 }
 
+.outer-container {
+    @apply px-6 md:px-10 xl:px-32 2xl:px-40;
+}
+
 .social-icon:hover path {
     @apply fill-peach-light;
 }
