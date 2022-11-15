@@ -17,13 +17,13 @@ const Footer = () => {
     const md = useMediaQuery(screens.md);
 
     return (
-        <footer
-            className={`outer-container relative bg-black pb-16 text-[#8e8e8f] md:py-20 ${
-                showContentBanner ? "pt-0 md:pt-0" : "pt-16"
-            }`}
-        >
-            {showContentBanner && <ContactBanner />}
-            <div className="m-auto">
+        <footer className="bg-black">
+            <div
+                className={`container relative m-auto pb-16 text-[#8e8e8f] md:py-20 ${
+                    showContentBanner ? "pt-0 md:pt-0" : "pt-16"
+                }`}
+            >
+                {showContentBanner && <ContactBanner />}
                 <div className="flex flex-col items-center py-2 md:mb-8 md:flex-row md:justify-between md:border-b md:border-grey-dark md:pb-10">
                     <NavLink to="/">
                         <img
