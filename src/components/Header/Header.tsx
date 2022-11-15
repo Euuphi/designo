@@ -6,7 +6,7 @@ import iconHamburger from "@/assets/shared/mobile/icon-hamburger.svg";
 import iconClose from "@/assets/shared/mobile/icon-close.svg";
 // Components
 import { NavLink } from "react-router-dom";
-import Nav from "./Nav";
+import HeaderNav from "./HeaderNav";
 
 const Header = () => {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -28,7 +28,7 @@ const Header = () => {
                 />
             </NavLink>
             {md ? (
-                <Nav />
+                <HeaderNav />
             ) : (
                 <button onClick={toggleMobileMenu}>
                     {showMobileMenu ? (
@@ -44,7 +44,7 @@ const Header = () => {
                     showMobileMenu ? "show top-full" : "hide top-0"
                 }`}
             >
-                <Nav />
+                <HeaderNav />
             </div>
         </header>
     );
