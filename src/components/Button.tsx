@@ -17,7 +17,7 @@ const ButtonDark = ({ theme = "light", text }: Props) => {
     return (
         <button
             className={
-                "rounded-lg px-6 py-4 text-[15px] font-medium uppercase hover:bg-peach-light hover:text-white" +
+                "rounded-lg px-6 py-4 text-[.9375rem] font-medium uppercase hover:bg-peach-light hover:text-white" +
                 ` ${buttonTheme[theme]}`
             }
         >
