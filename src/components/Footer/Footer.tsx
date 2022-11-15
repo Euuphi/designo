@@ -1,5 +1,5 @@
 import logoLight from "assets/shared/desktop/logo-light.png";
-import facebookLogo from "assets/shared/desktop/icon-facebook.svg";
+import { ReactComponent as FacebookLogo } from "assets/shared/desktop/icon-facebook.svg";
 import youtubeLogo from "assets/shared/desktop/icon-youtube.svg";
 import twitterLogo from "assets/shared/desktop/icon-twitter.svg";
 import pinterestLogo from "assets/shared/desktop/icon-pinterest.svg";
@@ -49,7 +49,7 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="flex gap-4">
-                        <img src={facebookLogo} alt="Facebook logo" />
+                        <FacebookLogo />
                         <img src={youtubeLogo} alt="Youtube logo" />
                         <img src={twitterLogo} alt="Twitter logo" />
                         <img src={pinterestLogo} alt="Pinterest logo" />
