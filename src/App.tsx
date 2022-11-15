@@ -4,6 +4,7 @@ import About from "@/pages/About";
 import Locations from "@/pages/Locations";
 import Contact from "@/pages/Contact";
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                     <Route path="/locations" element={<Locations />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
+                <Footer />
             </BrowserRouter>
         </>
     );
