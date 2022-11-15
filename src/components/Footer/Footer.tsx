@@ -1,9 +1,9 @@
 import logoLight from "assets/shared/desktop/logo-light.png";
 import { ReactComponent as FacebookLogo } from "assets/shared/desktop/icon-facebook.svg";
-import youtubeLogo from "assets/shared/desktop/icon-youtube.svg";
-import twitterLogo from "assets/shared/desktop/icon-twitter.svg";
-import pinterestLogo from "assets/shared/desktop/icon-pinterest.svg";
-import instagramLogo from "assets/shared/desktop/icon-instagram.svg";
+import { ReactComponent as YoutubeLogo } from "assets/shared/desktop/icon-youtube.svg";
+import { ReactComponent as TwitterLogo } from "assets/shared/desktop/icon-twitter.svg";
+import { ReactComponent as PinterestLogo } from "assets/shared/desktop/icon-pinterest.svg";
+import { ReactComponent as InstagramLogo } from "assets/shared/desktop/icon-instagram.svg";
 // Components
 import FooterNav from "./FooterNav";
 
@@ -49,11 +49,11 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="flex gap-4">
-                        <FacebookLogo />
-                        <img src={youtubeLogo} alt="Youtube logo" />
-                        <img src={twitterLogo} alt="Twitter logo" />
-                        <img src={pinterestLogo} alt="Pinterest logo" />
-                        <img src={instagramLogo} alt="Instagram logo" />
+                        <FacebookLogo className="social-icon" />
+                        <YoutubeLogo className="social-icon" />
+                        <TwitterLogo className="social-icon" />
+                        <PinterestLogo className="social-icon" />
+                        <InstagramLogo className="social-icon" />
                     </div>
                 </div>
             </div>

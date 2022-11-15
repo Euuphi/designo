@@ -15,3 +15,7 @@ body {
     font-weight: 400;
     line-height: 1.625rem;
 }
+
+.social-icon:hover path {
+    @apply fill-peach-light;
+}
