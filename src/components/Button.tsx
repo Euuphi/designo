@@ -8,7 +8,7 @@ interface Props {
     theme?: keyof ButtonThemes;
 }
 
-const ButtonDark = ({ theme = "light", text }: Props) => {
+const Button = ({ theme = "light", text }: Props) => {
     const buttonTheme = {
         light: "bg-white text-black",
         dark: "bg-peach text-white",
@@ -26,4 +26,4 @@ const ButtonDark = ({ theme = "light", text }: Props) => {
     );
 };
 
-export default ButtonDark;
+export default Button;
