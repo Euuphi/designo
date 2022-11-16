@@ -10,6 +10,8 @@
 @tailwind utilities;
 
 body {
+    position: relative;
+
     font-family: "Jost", sans-serif;
     font-size: 1rem;
     font-weight: 400;

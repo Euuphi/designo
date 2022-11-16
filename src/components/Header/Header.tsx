@@ -19,7 +19,7 @@ const Header = () => {
     }, [md]);
 
     return (
-        <header className="relative flex items-center justify-between py-9 px-6">
+        <header className="container mx-auto flex h-28 items-center justify-between py-9 px-6">
             <NavLink to="/">
                 <img
                     className="max-h-7"
@@ -40,9 +40,10 @@ const Header = () => {
             )}
 
             <div
-                className={`absolute left-0 z-50 h-screen w-full bg-black bg-opacity-50 transition-all duration-300 ${
-                    showMobileMenu ? "show top-full" : "hide top-0"
+                className={`absolute left-0 z-50 h-[calc(100%-7rem)] w-full bg-black bg-opacity-50 transition-all duration-300 ${
+                    showMobileMenu ? "show top-28" : "hide top-0"
                 }`}
+                onClick={() => setShowMobileMenu(false)}
             >
                 <HeaderNav />
             </div>

@@ -9,7 +9,9 @@ const NavLinks = () => {
                 <NavLink
                     to="/about"
                     className={({ isActive }) =>
-                        isActive ? activeClassName : undefined
+                        `inline-block w-full ${
+                            isActive ? activeClassName : undefined
+                        }`
                     }
                 >
                     Our Company
@@ -19,7 +21,9 @@ const NavLinks = () => {
                 <NavLink
                     to="/locations"
                     className={({ isActive }) =>
-                        isActive ? activeClassName : undefined
+                        `inline-block w-full ${
+                            isActive ? activeClassName : undefined
+                        }`
                     }
                 >
                     Locations
@@ -29,7 +33,9 @@ const NavLinks = () => {
                 <NavLink
                     to="/contact"
                     className={({ isActive }) =>
-                        isActive ? activeClassName : undefined
+                        `inline-block w-full ${
+                            isActive ? activeClassName : undefined
+                        }`
                     }
                 >
                     Contact
