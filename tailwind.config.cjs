@@ -15,6 +15,7 @@ module.exports = {
                 },
             },
             backgroundImage: {
+                hero: "url('src/assets/home/desktop/bg-pattern-hero-home.svg')",
                 cta: "url('/src/assets/shared/desktop/bg-pattern-call-to-action.svg')",
             },
         },
