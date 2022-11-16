@@ -4,14 +4,12 @@ import Button from "./Button";
 
 const ContactBanner = () => {
     const md = useMediaQuery(screens.md);
-    const bgImageClasses =
-        "bg-cta bg-no-repeat bg-[45%_50%] md:bg-[35%_50%] lg:bg-[right_center] xl:bg-[length:80%]";
 
     return (
         <div
             className={
-                "-mb-28 flex -translate-y-1/2 flex-col items-center gap-8 rounded-2xl bg-peach px-6 py-16 text-center text-white md:-mb-32 md:-translate-y-2/3 lg:flex-row lg:justify-between lg:px-24 lg:py-[4.5rem] lg:text-left " +
-                bgImageClasses
+                "-mb-28 flex -translate-y-1/2 flex-col items-center gap-8 rounded-2xl px-6 py-16 text-center text-white md:-mb-32 md:-translate-y-2/3 lg:flex-row lg:justify-between lg:px-24 lg:py-[4.5rem] lg:text-left " +
+                "bg-peach bg-cta bg-[45%_50%] bg-no-repeat md:bg-[35%_50%] lg:bg-[right_center] xl:bg-[length:80%]"
             }
         >
             <div>
