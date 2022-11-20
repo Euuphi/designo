@@ -5,6 +5,12 @@ import webDesignMobile from "@/assets/home/mobile/image-web-design.jpg";
 import webDesignTablet from "@/assets/home/tablet/image-web-design.jpg";
 import webDesignDesktop from "@/assets/home/desktop/image-web-design-small.jpg";
 import webDesignDesktopLarge from "@/assets/home/desktop/image-web-design-large.jpg";
+import appDesignMobile from "@/assets/home/mobile/image-app-design.jpg";
+import appDesignTablet from "@/assets/home/tablet/image-app-design.jpg";
+import appDesignDesktop from "@/assets/home/desktop/image-app-design.jpg";
+import graphicDesignMobile from "@/assets/home/mobile/image-graphic-design.jpg";
+import graphicDesignTablet from "@/assets/home/tablet/image-graphic-design.jpg";
+import graphicDesignDesktop from "@/assets/home/desktop/image-graphic-design.jpg";
 // Components
 import Button from "@/components/Button";
 import ServiceCard from "@/components/ServiceCard";
@@ -39,7 +45,7 @@ const Home = () => {
                     alt="Iphone displaying vase image and word 'Frame'"
                 />
             </main>
-            <section className="mb-28 grid grid-cols-1 px-6 sm:px-0 lg:grid-cols-2">
+            <section className="mb-28 grid grid-cols-1 gap-x-8 gap-y-6 px-6 sm:px-0 lg:grid-cols-2">
                 <ServiceCard
                     bgImage={{
                         small: webDesignMobile,
@@ -48,6 +54,23 @@ const Home = () => {
                         xLarge: webDesignDesktopLarge,
                     }}
                     title="Web Design"
+                    customClass="lg:row-span-2"
+                />
+                <ServiceCard
+                    bgImage={{
+                        small: appDesignMobile,
+                        medium: appDesignTablet,
+                        large: appDesignDesktop,
+                    }}
+                    title="App Design"
+                />
+                <ServiceCard
+                    bgImage={{
+                        small: graphicDesignMobile,
+                        medium: graphicDesignTablet,
+                        large: graphicDesignDesktop,
+                    }}
+                    title="Graphic Design"
                 />
             </section>
             <section className="px-6 sm:px-0">Illustrations</section>
