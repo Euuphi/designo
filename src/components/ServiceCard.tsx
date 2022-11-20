@@ -2,6 +2,7 @@
 import { ReactComponent as RightChevron } from "@/assets/shared/desktop/icon-right-arrow.svg";
 // Hooks
 import useMediaQuery, { screens } from "@/hooks/userMediaQuery";
+import { NavLink } from "react-router-dom";
 
 interface Props {
     bgImage: {
@@ -11,17 +12,21 @@ interface Props {
         xLarge?: string;
     };
     title: string;
+    to?: string;
     customClass?: string;
 }
 
-const ServiceCard = ({ bgImage, title, customClass }: Props) => {
+const ServiceCard = ({ bgImage, title, to, customClass }: Props) => {
     const sm = useMediaQuery(screens.sm);
     const lg = useMediaQuery(screens.lg);
     const xl = useMediaQuery(screens.xl);
 
-    return (
+    const ServiceCard = (
         <div
-            className={`service-card group h-full w-full cursor-pointer overflow-hidden rounded-2xl bg-cover bg-no-repeat text-center uppercase text-white hover:bg-cover ${customClass}`}
+            className={`service-card group h-full w-full cursor-pointer overflow-hidden rounded-2xl bg-cover bg-no-repeat text-center uppercase text-white hover:bg-cover ${
+                // Add custom classes here if no link wrapper is required
+                !to && customClass
+            }`}
             style={
                 {
                     "--bg-image": `url('${
@@ -45,6 +50,15 @@ const ServiceCard = ({ bgImage, title, customClass }: Props) => {
                 </span>
             </div>
         </div>
+    );
+
+    // Wrap component in a link if link is provided
+    return to ? (
+        <NavLink to={to} className={customClass}>
+            {ServiceCard}
+        </NavLink>
+    ) : (
+        ServiceCard
     );
 };
 

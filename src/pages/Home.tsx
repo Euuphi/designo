@@ -54,6 +54,7 @@ const Home = () => {
                         xLarge: webDesignDesktopLarge,
                     }}
                     title="Web Design"
+                    to="services/web-design"
                     customClass="lg:row-span-2"
                 />
                 <ServiceCard
@@ -62,6 +63,7 @@ const Home = () => {
                         medium: appDesignTablet,
                         large: appDesignDesktop,
                     }}
+                    to="services/app-design"
                     title="App Design"
                 />
                 <ServiceCard
@@ -70,6 +72,7 @@ const Home = () => {
                         medium: graphicDesignTablet,
                         large: graphicDesignDesktop,
                     }}
+                    to="services/graphic-design"
                     title="Graphic Design"
                 />
             </section>
