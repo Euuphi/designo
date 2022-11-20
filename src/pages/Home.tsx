@@ -11,9 +11,14 @@ import appDesignDesktop from "@/assets/home/desktop/image-app-design.jpg";
 import graphicDesignMobile from "@/assets/home/mobile/image-graphic-design.jpg";
 import graphicDesignTablet from "@/assets/home/tablet/image-graphic-design.jpg";
 import graphicDesignDesktop from "@/assets/home/desktop/image-graphic-design.jpg";
+
+import illustrationPassionate from "@/assets/home/desktop/illustration-passionate.svg";
+import illustrationResourceful from "@/assets/home/desktop/illustration-resourceful.svg";
+import illustrationFriendly from "@/assets/home/desktop/illustration-friendly.svg";
 // Components
 import Button from "@/components/Button";
 import ServiceCard from "@/components/ServiceCard";
+import IllustrationCard from "@/components/IllustrationCard";
 
 const Home = () => {
     const sm = useMediaQuery(screens.sm);
@@ -76,7 +81,23 @@ const Home = () => {
                     title="Graphic Design"
                 />
             </section>
-            <section className="px-6 sm:px-0">Illustrations</section>
+            <section className="flex flex-col gap-20 px-6 sm:px-0 lg:flex-row">
+                <IllustrationCard
+                    imgSrc={illustrationPassionate}
+                    title="Passionate"
+                    text="Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions."
+                />
+                <IllustrationCard
+                    imgSrc={illustrationResourceful}
+                    title="Resourceful"
+                    text="Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients' needs."
+                />
+                <IllustrationCard
+                    imgSrc={illustrationFriendly}
+                    title="Friendly"
+                    text="We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide."
+                />
+            </section>
         </div>
     );
 };
