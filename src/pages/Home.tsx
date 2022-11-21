@@ -1,24 +1,16 @@
 import useMediaQuery, { screens } from "@/hooks/userMediaQuery";
 // Assets
 import heroImage from "@/assets/home/desktop/image-hero-phone.png";
-import webDesignMobile from "@/assets/home/mobile/image-web-design.jpg";
-import webDesignTablet from "@/assets/home/tablet/image-web-design.jpg";
-import webDesignDesktop from "@/assets/home/desktop/image-web-design-small.jpg";
-import webDesignDesktopLarge from "@/assets/home/desktop/image-web-design-large.jpg";
-import appDesignMobile from "@/assets/home/mobile/image-app-design.jpg";
-import appDesignTablet from "@/assets/home/tablet/image-app-design.jpg";
-import appDesignDesktop from "@/assets/home/desktop/image-app-design.jpg";
-import graphicDesignMobile from "@/assets/home/mobile/image-graphic-design.jpg";
-import graphicDesignTablet from "@/assets/home/tablet/image-graphic-design.jpg";
-import graphicDesignDesktop from "@/assets/home/desktop/image-graphic-design.jpg";
 
 import illustrationPassionate from "@/assets/home/desktop/illustration-passionate.svg";
 import illustrationResourceful from "@/assets/home/desktop/illustration-resourceful.svg";
 import illustrationFriendly from "@/assets/home/desktop/illustration-friendly.svg";
 // Components
 import Button from "@/components/Button";
-import ServiceCard from "@/components/ServiceCard";
+import WebDesignCard from "@/components/ServiceCards/WebDesignCard";
 import IllustrationCard from "@/components/IllustrationCard";
+import AppDesignCard from "@/components/ServiceCards/AppDesignCard";
+import GraphicDesignCard from "@/components/ServiceCards/GraphicDesignCard";
 
 const Home = () => {
     const sm = useMediaQuery(screens.sm);
@@ -51,35 +43,9 @@ const Home = () => {
                 />
             </main>
             <section className="mb-28 grid grid-cols-1 gap-x-8 gap-y-6 px-6 sm:px-0 lg:grid-cols-2">
-                <ServiceCard
-                    bgImage={{
-                        small: webDesignMobile,
-                        medium: webDesignTablet,
-                        large: webDesignDesktop,
-                        xLarge: webDesignDesktopLarge,
-                    }}
-                    title="Web Design"
-                    to="services/web-design"
-                    customClass="lg:row-span-2"
-                />
-                <ServiceCard
-                    bgImage={{
-                        small: appDesignMobile,
-                        medium: appDesignTablet,
-                        large: appDesignDesktop,
-                    }}
-                    to="services/app-design"
-                    title="App Design"
-                />
-                <ServiceCard
-                    bgImage={{
-                        small: graphicDesignMobile,
-                        medium: graphicDesignTablet,
-                        large: graphicDesignDesktop,
-                    }}
-                    to="services/graphic-design"
-                    title="Graphic Design"
-                />
+                <WebDesignCard />
+                <AppDesignCard />
+                <GraphicDesignCard />
             </section>
             <section className="flex flex-col gap-20 px-6 sm:px-0 lg:flex-row">
                 <IllustrationCard
