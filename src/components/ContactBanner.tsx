@@ -1,5 +1,4 @@
 import useMediaQuery, { screens } from "@/hooks/userMediaQuery";
-import bgImage from "@/assets/shared/desktop/bg-pattern-call-to-action.svg";
 import Button from "./Button";
 
 const ContactBanner = () => {
