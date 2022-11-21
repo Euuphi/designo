@@ -24,7 +24,7 @@ const Home = () => {
     const sm = useMediaQuery(screens.sm);
 
     return (
-        <div className={`${sm ? "container " : null}mx-auto mb-96`}>
+        <div className={`${sm ? "container " : null}mx-auto`}>
             <main
                 className={
                     "mb-28 flex flex-col items-center overflow-hidden px-6 pt-20 text-white sm:rounded-2xl lg:flex-row lg:justify-between lg:py-28 lg:px-12 xl:px-24 " +

@@ -17,7 +17,7 @@ const Footer = () => {
     const md = useMediaQuery(screens.md);
 
     return (
-        <footer className="bg-black">
+        <footer className="mt-96 bg-black">
             <div
                 className={`container relative m-auto pb-16 text-[#8e8e8f] md:py-20 ${
                     showContentBanner ? "pt-0 md:pt-0" : "pt-16"
