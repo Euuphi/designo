@@ -38,7 +38,7 @@ const ServiceCard = ({ bgImage, title, to, customClass }: Props) => {
                             ? bgImage.medium || bgImage.large
                             : bgImage.small || bgImage.large
                     }')`,
-                    "background-image": "var(--bg-image)",
+                    backgroundImage: "var(--bg-image)",
                 } as React.CSSProperties
             }
         >
