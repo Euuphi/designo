@@ -42,7 +42,7 @@ const Home = () => {
                     alt="Iphone displaying vase image and word 'Frame'"
                 />
             </main>
-            <section className="mb-28 grid grid-cols-1 gap-x-8 gap-y-6 px-6 sm:px-0 lg:grid-cols-2">
+            <section className="mb-40 grid grid-cols-1 gap-x-8 gap-y-6 px-6 sm:px-0 lg:grid-cols-2">
                 <WebDesignCard />
                 <AppDesignCard />
                 <GraphicDesignCard />
