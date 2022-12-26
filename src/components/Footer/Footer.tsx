@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useMediaQuery, { screens } from "@/hooks/userMediaQuery";
+import useMediaQuery, { screens } from "@/hooks/useMediaQuery";
 // Assets
 import logoLight from "assets/shared/desktop/logo-light.png";
 import { ReactComponent as FacebookLogo } from "assets/shared/desktop/icon-facebook.svg";

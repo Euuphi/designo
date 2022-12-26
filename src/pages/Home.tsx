@@ -1,4 +1,4 @@
-import useMediaQuery, { screens } from "@/hooks/userMediaQuery";
+import useMediaQuery, { screens } from "@/hooks/useMediaQuery";
 // Assets
 import heroImage from "@/assets/home/desktop/image-hero-phone.png";
 

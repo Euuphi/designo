@@ -1,7 +1,7 @@
 // Assets
 import { ReactComponent as RightChevron } from "@/assets/shared/desktop/icon-right-arrow.svg";
 // Hooks
-import useMediaQuery, { screens } from "@/hooks/userMediaQuery";
+import useMediaQuery, { screens } from "@/hooks/useMediaQuery";
 import { NavLink } from "react-router-dom";
 
 interface Props {

@@ -1,4 +1,4 @@
-import useMediaQuery, { screens } from "@/hooks/userMediaQuery";
+import useMediaQuery, { screens } from "@/hooks/useMediaQuery";
 import Button from "./Button";
 
 const ContactBanner = () => {

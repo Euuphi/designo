@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import useMediaQuery, { screens } from "@/hooks/userMediaQuery";
+import useMediaQuery, { screens } from "@/hooks/useMediaQuery";
 // Assets
 import logoDark from "@/assets/shared/desktop/logo-dark.png";
 import iconHamburger from "@/assets/shared/mobile/icon-hamburger.svg";
