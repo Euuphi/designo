@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import useMediaQuery, { screens } from "@/hooks/useMediaQuery";
+import useBreakpoints from "@/hooks/useBreakpoints";
 // Assets
 import logoDark from "@/assets/shared/desktop/logo-dark.png";
 import iconHamburger from "@/assets/shared/mobile/icon-hamburger.svg";
@@ -10,7 +10,7 @@ import HeaderNav from "./HeaderNav";
 
 const Header = () => {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
-    const md = useMediaQuery(screens.md);
+    const { md } = useBreakpoints("md");
 
     const toggleMobileMenu = () => setShowMobileMenu((prevState) => !prevState);
 

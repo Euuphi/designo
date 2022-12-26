@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export const screens = {
+export const breakpoints = {
     sm: "(min-width: 480px)",
     md: "(min-width: 768px)",
     lg: "(min-width: 1024px)",
@@ -9,6 +9,12 @@ export const screens = {
     xxxl: "(min-width: 1920px)",
 };
 
+/**
+ * Returns state variable that tracks if the current screen size matches the media query param
+ *
+ * @param {string} query - Media Query string eg. "(min-width: 480px)"
+ * @return {boolean}
+ */
 function useMediaQuery(query: string): boolean {
     const getMatches = (query: string): boolean => {
         // Prevents SSR issues

@@ -1,8 +1,8 @@
-import useMediaQuery, { screens } from "@/hooks/useMediaQuery";
+import useBreakpoints from "@/hooks/useBreakpoints";
 import Button from "./Button";
 
 const ContactBanner = () => {
-    const md = useMediaQuery(screens.md);
+    const { md } = useBreakpoints("md");
 
     return (
         <div

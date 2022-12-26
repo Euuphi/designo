@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useMediaQuery, { screens } from "@/hooks/useMediaQuery";
+import useBreakpoints from "@/hooks/useBreakpoints";
 // Assets
 import logoLight from "assets/shared/desktop/logo-light.png";
 import { ReactComponent as FacebookLogo } from "assets/shared/desktop/icon-facebook.svg";
@@ -14,7 +14,7 @@ import ContactBanner from "../ContactBanner";
 
 const Footer = () => {
     const [showContentBanner, setShowContentBanner] = useState(true);
-    const md = useMediaQuery(screens.md);
+    const { md } = useBreakpoints("md");
 
     return (
         <footer className="mt-96 bg-black">

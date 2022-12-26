@@ -1,4 +1,4 @@
-import useMediaQuery, { screens } from "@/hooks/useMediaQuery";
+import useBreakpoints from "@/hooks/useBreakpoints";
 // Assets
 import heroImage from "@/assets/home/desktop/image-hero-phone.png";
 
@@ -13,7 +13,7 @@ import AppDesignCard from "@/components/ServiceCards/AppDesignCard";
 import GraphicDesignCard from "@/components/ServiceCards/GraphicDesignCard";
 
 const Home = () => {
-    const sm = useMediaQuery(screens.sm);
+    const { sm } = useBreakpoints("sm");
 
     return (
         <div className={`${sm ? "container " : null}mx-auto`}>

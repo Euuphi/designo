@@ -1,7 +1,7 @@
 // Assets
 import { ReactComponent as RightChevron } from "@/assets/shared/desktop/icon-right-arrow.svg";
 // Hooks
-import useMediaQuery, { screens } from "@/hooks/useMediaQuery";
+import useBreakpoints from "@/hooks/useBreakpoints";
 import { NavLink } from "react-router-dom";
 
 interface Props {
@@ -17,9 +17,7 @@ interface Props {
 }
 
 const ServiceCard = ({ bgImage, title, to, customClass }: Props) => {
-    const sm = useMediaQuery(screens.sm);
-    const lg = useMediaQuery(screens.lg);
-    const xl = useMediaQuery(screens.xl);
+    const { sm, lg, xl } = useBreakpoints("sm", "lg", "xl");
 
     const ServiceCard = (
         <div
