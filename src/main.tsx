@@ -1,18 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import loadable from "@loadable/component";
 // React Router
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Components
 import App from "./App";
 import "@/styles/index.css";
-// Pages
-import Home from "@/pages/Home";
-import About from "@/pages/About";
-import Locations from "@/pages/Locations";
-import Contact from "@/pages/Contact";
-import WebDesign from "@/pages/Services/WebDesign";
-import AppDesign from "./pages/Services/AppDesign";
-import GraphicDesign from "./pages/Services/GraphicDesign";
+
+// Lazy load pages
+const Home = loadable(() => import("@/pages/Home"));
+const About = loadable(() => import("@/pages/About"));
+const Locations = loadable(() => import("@/pages/Locations"));
+const Contact = loadable(() => import("@/pages/Contact"));
+const WebDesign = loadable(() => import("@/pages/Services/WebDesign"));
+const AppDesign = loadable(() => import("@/pages/Services/AppDesign"));
+const GraphicDesign = loadable(() => import("@/pages/Services/GraphicDesign"));
 
 const router = createBrowserRouter([
     {
