@@ -1,19 +1,17 @@
-@layer components {
-    .heading-1 {
-        @apply text-[2rem] font-medium leading-9 md:text-5xl;
-    }
+.heading-1 {
+	@apply text-[2rem] font-medium leading-9 md:text-5xl;
+}
 
-    .heading-2 {
-        font-weight: 500;
-        letter-spacing: 0.125rem;
+.heading-2 {
+	font-weight: 500;
+	letter-spacing: 0.125rem;
 
-        @apply text-[1.75rem] leading-9 md:text-[2.5rem] md:leading-[3rem];
-    }
+	@apply text-[1.75rem] leading-9 md:text-[2.5rem] md:leading-[3rem];
+}
 
-    .heading-3 {
-        font-size: 1.25rem;
-        font-weight: 500;
-        line-height: 1.625rem;
-        letter-spacing: 0.3125rem;
-    }
+.heading-3 {
+	font-size: 1.25rem;
+	font-weight: 500;
+	line-height: 1.625rem;
+	letter-spacing: 0.3125rem;
 }

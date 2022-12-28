@@ -1,12 +1,12 @@
 import useMediaQuery, { breakpoints } from "./useMediaQuery";
 
 interface Screens {
-    sm?: boolean;
-    md?: boolean;
-    lg?: boolean;
-    xl?: boolean;
-    xxl?: boolean;
-    xxxl?: boolean;
+	sm?: boolean;
+	md?: boolean;
+	lg?: boolean;
+	xl?: boolean;
+	xxl?: boolean;
+	xxxl?: boolean;
 }
 
 type Breakpoints = keyof typeof breakpoints;
@@ -21,34 +21,34 @@ type Breakpoints = keyof typeof breakpoints;
  * @returns Object of state variables
  */
 const useBreakpoints = (...args: Breakpoints[]) => {
-    let screens: Screens = {};
+	let screens: Screens = {};
 
-    args.forEach((breakpoint) => {
-        switch (breakpoint) {
-            case "sm":
-                screens["sm"] = useMediaQuery(breakpoints.sm);
-                break;
-            case "md":
-                screens["md"] = useMediaQuery(breakpoints.md);
-                break;
-            case "lg":
-                screens["lg"] = useMediaQuery(breakpoints.lg);
-                break;
-            case "xl":
-                screens["xl"] = useMediaQuery(breakpoints.xl);
-                break;
-            case "xxl":
-                screens["xxl"] = useMediaQuery(breakpoints.xxl);
-                break;
-            case "xxxl":
-                screens["xxxl"] = useMediaQuery(breakpoints.xxxl);
-                break;
-            default:
-                break;
-        }
-    });
+	args.forEach((breakpoint) => {
+		switch (breakpoint) {
+			case "sm":
+				screens["sm"] = useMediaQuery(breakpoints.sm);
+				break;
+			case "md":
+				screens["md"] = useMediaQuery(breakpoints.md);
+				break;
+			case "lg":
+				screens["lg"] = useMediaQuery(breakpoints.lg);
+				break;
+			case "xl":
+				screens["xl"] = useMediaQuery(breakpoints.xl);
+				break;
+			case "xxl":
+				screens["xxl"] = useMediaQuery(breakpoints.xxl);
+				break;
+			case "xxxl":
+				screens["xxxl"] = useMediaQuery(breakpoints.xxxl);
+				break;
+			default:
+				break;
+		}
+	});
 
-    return screens;
+	return screens;
 };
 
 export default useBreakpoints;
