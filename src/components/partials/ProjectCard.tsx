@@ -11,12 +11,13 @@ interface Props {
 
 const ProjectCard = ({ title, description, image }: Props) => {
 	return (
-		<div className="max-w-[350px] overflow-hidden rounded-2xl">
+		<div className="relative overflow-hidden rounded-2xl lg:max-w-[350px]">
 			<Image
 				src={image.src}
 				alt={image.caption ? image.caption : ""}
-				height={320}
-				width={350}
+				height={585}
+				width={640}
+				style={{ objectFit: "cover" }}
 			/>
 			<article className="bg-[#fdf3f0] px-7 py-8">
 				<h2 className="heading-3 mb-4 text-center uppercase text-peach">
