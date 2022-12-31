@@ -30,7 +30,7 @@ export default function Home() {
 			<div className="container mx-auto">
 				<main
 					className={
-						"mb-28 flex flex-col items-center overflow-hidden px-6 pt-20 text-white sm:rounded-2xl lg:flex-row lg:justify-between lg:py-28 lg:px-12 xl:px-24 " +
+						"mb-28 flex flex-col items-center overflow-hidden px-6 pt-20 text-white sm-max:-mx-40 sm-max:px-40 sm:rounded-2xl lg:flex-row lg:justify-between lg:py-28 lg:px-12 xl:px-24 " +
 						"bg-peach bg-hero bg-left bg-no-repeat sm:bg-[center_right_-235px] lg:bg-right"
 					}>
 					<div className="z-10 flex max-w-[21rem] flex-col items-center gap-6 text-center md:max-w-[30rem] md:gap-8 lg:items-start lg:text-left">
@@ -52,12 +52,12 @@ export default function Home() {
 						alt="Iphone displaying vase image and word 'Frame'"
 					/>
 				</main>
-				<section className="mb-40 grid grid-cols-1 gap-x-8 gap-y-6 px-6 sm:px-0 lg:grid-cols-2">
+				<section className="mb-40 grid grid-cols-1 gap-x-8 gap-y-6 lg:grid-cols-2">
 					<WebDesignCard />
 					<AppDesignCard />
 					<GraphicDesignCard />
 				</section>
-				<section className="flex flex-col gap-20 px-6 sm:px-0 lg:flex-row">
+				<section className="flex flex-col gap-20 lg:flex-row">
 					<IllustrationCard
 						icon={IllustrationPassionate}
 						title="Passionate"
