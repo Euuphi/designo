@@ -12,7 +12,7 @@ const AppDesignCard = () => {
 				medium: appDesignTablet.src,
 				large: appDesignDesktop.src,
 			}}
-			to="services/app-design"
+			to="/services/app-design"
 			title="App Design"
 		/>
 	);

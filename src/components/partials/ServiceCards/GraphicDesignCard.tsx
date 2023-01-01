@@ -12,7 +12,7 @@ const GraphicDesignCard = () => {
 				medium: graphicDesignTablet.src,
 				large: graphicDesignDesktop.src,
 			}}
-			to="services/graphic-design"
+			to="/services/graphic-design"
 			title="Graphic Design"
 		/>
 	);

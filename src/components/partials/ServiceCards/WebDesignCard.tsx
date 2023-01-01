@@ -15,7 +15,7 @@ const WebDesignCard = () => {
 				xLarge: webDesignDesktopLarge.src,
 			}}
 			title="Web Design"
-			to="services/web-design"
+			to="/services/web-design"
 			customClass="lg:row-span-2"
 		/>
 	);
