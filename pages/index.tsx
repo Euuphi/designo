@@ -53,7 +53,7 @@ export default function Home() {
 					/>
 				</main>
 				<section className="mb-40 grid grid-cols-1 gap-x-8 gap-y-6 lg:grid-cols-2">
-					<WebDesignCard />
+					<WebDesignCard rowSpan />
 					<AppDesignCard />
 					<GraphicDesignCard />
 				</section>
