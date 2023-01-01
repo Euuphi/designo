@@ -2,6 +2,8 @@ import sanityClient from "@/sanityClient";
 import urlFor from "@/utils/urlFor";
 import ProjectCard from "@/components/partials/ProjectCard";
 import ServiceHero from "@/components/sections/ServiceHero";
+import GraphicDesignCard from "@/components/partials/ServiceCards/GraphicDesignCard";
+import AppDesignCard from "@/components/partials/ServiceCards/AppDesignCard";
 
 const WebDesign = ({ projects }: any) => {
 	return (
@@ -10,7 +12,7 @@ const WebDesign = ({ projects }: any) => {
 				title="Web Design"
 				description="We build websites that serve as powerful marketing tools and bring memorable brand experiences."
 			/>
-			<section className="mt-24 grid gap-y-10 gap-x-8 lg:grid-cols-3 lg:gap-y-9">
+			<section className="section-space-b grid gap-y-10 gap-x-8 lg:grid-cols-2 lg:gap-y-9 xl:grid-cols-3">
 				{projects.map((project: any) => {
 					const { title, description, image } = project;
 
@@ -25,13 +27,17 @@ const WebDesign = ({ projects }: any) => {
 					);
 				})}
 			</section>
+			<section className="section-space-b grid gap-y-6 gap-x-8 lg:grid-cols-2">
+				<AppDesignCard />
+				<GraphicDesignCard />
+			</section>
 		</main>
 	);
 };
 
 export async function getStaticProps() {
 	const projects = await sanityClient.fetch(
-		`*[_type == "project"]{
+		`*[_type == "project" && category == "web"] | order(_createdAt asc){
 			title,
 			description,
 			url,
