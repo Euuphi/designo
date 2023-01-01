@@ -14,7 +14,7 @@ const WebDesign = ({ projects }: any) => {
 			/>
 			<section className="section-space-b grid gap-y-10 gap-x-8 lg:grid-cols-2 lg:gap-y-9 xl:grid-cols-3">
 				{projects.map((project: any) => {
-					const { title, description, image } = project;
+					const { title, description, image, url } = project;
 
 					return (
 						<ProjectCard
@@ -23,6 +23,7 @@ const WebDesign = ({ projects }: any) => {
 							image={{
 								src: urlFor(image).url(),
 							}}
+							url={url}
 						/>
 					);
 				})}
