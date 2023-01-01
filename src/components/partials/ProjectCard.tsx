@@ -11,7 +11,7 @@ interface Props {
 
 const ProjectCard = ({ title, description, image }: Props) => {
 	return (
-		<div className="relative overflow-hidden rounded-2xl lg:max-w-[350px]">
+		<div className="relative overflow-hidden rounded-2xl">
 			<Image
 				src={image.src}
 				alt={image.caption ? image.caption : ""}
@@ -19,7 +19,7 @@ const ProjectCard = ({ title, description, image }: Props) => {
 				width={640}
 				style={{ objectFit: "cover" }}
 			/>
-			<article className="bg-[#fdf3f0] px-7 py-8">
+			<article className="min-h-[158px] bg-[#fdf3f0] px-7 py-8">
 				<h2 className="heading-3 mb-4 text-center uppercase text-peach">
 					{title}
 				</h2>
