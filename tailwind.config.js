@@ -24,13 +24,25 @@ module.exports = {
 			},
 		},
 		screens: {
-			"sm-max": { max: "480px" },
 			sm: "480px",
 			md: "768px",
 			lg: "1024px",
 			xl: "1280px",
 			xxl: "1600px",
 			xxxl: "1920px",
+
+			"sm-max": { max: "480px" },
+			"md-max": { max: "768px" },
+			"lg-max": { max: "1024px" },
+			"xl-max": { max: "1280px" },
+			"xxl-max": { max: "1600px" },
+			"xxxl-max": { max: "1920px" },
+
+			"sm-only": { min: "480px", max: "767px" },
+			"md-only": { min: "768px", max: "1023px" },
+			"lg-only": { min: "1024px", max: "1279px" },
+			"xl-only": { min: "1280px", max: "1599px" },
+			"xxl-only": { min: "1600px", max: "1919px" },
 		},
 		container: {
 			padding: {
