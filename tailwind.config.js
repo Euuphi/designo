@@ -12,6 +12,7 @@ module.exports = {
 				peach: {
 					DEFAULT: "#e7816b",
 					light: "#ffad8b",
+					grey: "#fdf3f0",
 				},
 				grey: {
 					dark: "#333136",
@@ -21,6 +22,14 @@ module.exports = {
 			backgroundImage: {
 				hero: "url('/assets/home/desktop/bg-pattern-hero-home.svg')",
 				cta: "url('/assets/shared/desktop/bg-pattern-call-to-action.svg')",
+				"about-mobile":
+					"url('/assets/about/mobile/bg-pattern-hero-about-mobile.svg')",
+				"about-desktop":
+					"url('/assets/about/desktop/bg-pattern-hero-about-desktop.svg')",
+				"circles-two":
+					"url('/assets/shared/desktop/bg-pattern-two-circles.svg')",
+				"circles-three":
+					"url('/assets/shared/desktop/bg-pattern-three-circles.svg')",
 			},
 		},
 		screens: {
