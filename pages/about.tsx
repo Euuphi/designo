@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+import LocationLinks from "@/components/partials/LocationLinks";
+import IllustrationAustralia from "@assets/shared/desktop/illustration-australia.svg";
 
 const About = () => {
 	return (
@@ -116,6 +118,12 @@ const About = () => {
 							mission.
 						</p>
 					</article>
+				</section>
+				<section>
+					<LocationLinks
+						icon={IllustrationAustralia}
+						title="Australia"
+					/>
 				</section>
 			</div>
 		</>
